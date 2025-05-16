@@ -33,53 +33,71 @@
             Send = new Button();
             EnterChat = new TextBox();
             ChatList = new ListBox();
+            NewClient = new Button();
             SuspendLayout();
             // 
             // ChatBox
             // 
-            ChatBox.Location = new Point(295, 12);
+            ChatBox.Location = new Point(337, 16);
+            ChatBox.Margin = new Padding(3, 4, 3, 4);
             ChatBox.Multiline = true;
             ChatBox.Name = "ChatBox";
-            ChatBox.Size = new Size(407, 360);
+            ChatBox.Size = new Size(465, 499);
             ChatBox.TabIndex = 0;
             // 
             // Send
             // 
             Send.ForeColor = SystemColors.ActiveCaptionText;
-            Send.Location = new Point(648, 398);
+            Send.Location = new Point(741, 531);
+            Send.Margin = new Padding(3, 4, 3, 4);
             Send.Name = "Send";
-            Send.Size = new Size(54, 40);
+            Send.Size = new Size(62, 53);
             Send.TabIndex = 1;
             Send.Text = "Send🚀";
             Send.UseVisualStyleBackColor = true;
             // 
             // EnterChat
             // 
-            EnterChat.Location = new Point(295, 392);
+            EnterChat.Location = new Point(337, 523);
+            EnterChat.Margin = new Padding(3, 4, 3, 4);
             EnterChat.Multiline = true;
             EnterChat.Name = "EnterChat";
-            EnterChat.Size = new Size(347, 44);
+            EnterChat.Size = new Size(396, 57);
             EnterChat.TabIndex = 2;
             // 
             // ChatList
             // 
             ChatList.FormattingEnabled = true;
-            ChatList.Location = new Point(12, 12);
+            ChatList.Location = new Point(14, 16);
+            ChatList.Margin = new Padding(3, 4, 3, 4);
             ChatList.Name = "ChatList";
-            ChatList.Size = new Size(256, 424);
+            ChatList.Size = new Size(292, 364);
             ChatList.TabIndex = 3;
+            // 
+            // NewClient
+            // 
+            NewClient.ForeColor = SystemColors.ActiveCaptionText;
+            NewClient.Location = new Point(14, 523);
+            NewClient.Name = "NewClient";
+            NewClient.Size = new Size(292, 65);
+            NewClient.TabIndex = 4;
+            NewClient.Text = "Create New Client";
+            NewClient.UseVisualStyleBackColor = true;
+            NewClient.Click += NewClient_Click;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(714, 450);
+            ClientSize = new Size(816, 600);
+            Controls.Add(NewClient);
             Controls.Add(ChatList);
             Controls.Add(EnterChat);
             Controls.Add(Send);
             Controls.Add(ChatBox);
             ForeColor = SystemColors.Control;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form2";
             Text = "Chat";
             Load += Form2_Load;
@@ -93,5 +111,6 @@
         private Button Send;
         private TextBox EnterChat;
         private ListBox ChatList;
+        private Button NewClient;
     }
 }
