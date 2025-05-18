@@ -51,9 +51,10 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ButtonHighlight;
-            panel1.Location = new Point(21, 239);
+            panel1.Location = new Point(24, 319);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(398, 3);
+            panel1.Size = new Size(455, 4);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -61,9 +62,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(52, 209);
+            label1.Location = new Point(59, 279);
             label1.Name = "label1";
-            label1.Size = new Size(98, 21);
+            label1.Size = new Size(124, 28);
             label1.TabIndex = 1;
             label1.Text = "User Name :";
             // 
@@ -72,33 +73,36 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(52, 248);
+            label2.Location = new Point(59, 331);
             label2.Name = "label2";
-            label2.Size = new Size(101, 25);
+            label2.Size = new Size(128, 32);
             label2.TabIndex = 2;
             label2.Text = "Password :";
             // 
             // UserName
             // 
-            UserName.Location = new Point(152, 211);
+            UserName.Location = new Point(174, 281);
+            UserName.Margin = new Padding(3, 4, 3, 4);
             UserName.Name = "UserName";
-            UserName.Size = new Size(241, 23);
+            UserName.Size = new Size(275, 27);
             UserName.TabIndex = 3;
             UserName.TextChanged += UserName_TextChanged;
             // 
             // Password
             // 
-            Password.Location = new Point(152, 248);
+            Password.Location = new Point(174, 331);
+            Password.Margin = new Padding(3, 4, 3, 4);
             Password.Name = "Password";
-            Password.Size = new Size(241, 23);
+            Password.Size = new Size(275, 27);
             Password.TabIndex = 4;
             Password.TextChanged += Password_TextChanged;
             // 
             // Login
             // 
-            Login.Location = new Point(97, 383);
+            Login.Location = new Point(111, 511);
+            Login.Margin = new Padding(3, 4, 3, 4);
             Login.Name = "Login";
-            Login.Size = new Size(209, 25);
+            Login.Size = new Size(239, 33);
             Login.TabIndex = 5;
             Login.Text = "Login";
             Login.UseVisualStyleBackColor = true;
@@ -106,9 +110,10 @@
             // 
             // CreateLogin
             // 
-            CreateLogin.Location = new Point(97, 414);
+            CreateLogin.Location = new Point(111, 552);
+            CreateLogin.Margin = new Padding(3, 4, 3, 4);
             CreateLogin.Name = "CreateLogin";
-            CreateLogin.Size = new Size(209, 25);
+            CreateLogin.Size = new Size(239, 33);
             CreateLogin.TabIndex = 6;
             CreateLogin.Text = "Create Login";
             CreateLogin.UseVisualStyleBackColor = true;
@@ -124,18 +129,20 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(21, 248);
+            pictureBox1.Location = new Point(24, 331);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(24, 24);
+            pictureBox1.Size = new Size(27, 32);
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(20, 209);
+            pictureBox2.Location = new Point(23, 279);
+            pictureBox2.Margin = new Padding(3, 4, 3, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(24, 24);
+            pictureBox2.Size = new Size(27, 32);
             pictureBox2.TabIndex = 8;
             pictureBox2.TabStop = false;
             // 
@@ -144,9 +151,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(141, 159);
+            label3.Location = new Point(161, 212);
             label3.Name = "label3";
-            label3.Size = new Size(92, 32);
+            label3.Size = new Size(116, 41);
             label3.TabIndex = 9;
             label3.Text = "LOG IN";
             // 
@@ -155,9 +162,10 @@
             Checknotrobot.AutoSize = true;
             Checknotrobot.BackColor = SystemColors.ActiveCaptionText;
             Checknotrobot.ForeColor = SystemColors.Control;
-            Checknotrobot.Location = new Point(20, 288);
+            Checknotrobot.Location = new Point(23, 384);
+            Checknotrobot.Margin = new Padding(3, 4, 3, 4);
             Checknotrobot.Name = "Checknotrobot";
-            Checknotrobot.Size = new Size(105, 19);
+            Checknotrobot.Size = new Size(130, 24);
             Checknotrobot.TabIndex = 10;
             Checknotrobot.Text = "I'm not a robot";
             Checknotrobot.UseVisualStyleBackColor = false;
@@ -166,19 +174,20 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(114, 8);
+            pictureBox3.Location = new Point(130, 11);
+            pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(165, 148);
+            pictureBox3.Size = new Size(158, 157);
             pictureBox3.TabIndex = 11;
             pictureBox3.TabStop = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(405, 497);
+            ClientSize = new Size(463, 663);
             Controls.Add(pictureBox3);
             Controls.Add(Checknotrobot);
             Controls.Add(label3);
@@ -191,8 +200,10 @@
             Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Login";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
